@@ -1,0 +1,5 @@
+<?php
+
+$command = [
+	"echo {$something}",
+];
