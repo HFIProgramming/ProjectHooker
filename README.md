@@ -16,7 +16,7 @@ WebHook升级版，增加了各种功能
 - 觉得不够的话你可PR或者提issue看看能不能加咯
 
 # 说明
-- 调用地址： /project/{Your Project Name}  
+- 调用地址： `/project/{Your Project Name}` 
 我们在仓库内提供一些例子供你参考
 ## Config  
 包含：
@@ -36,7 +36,7 @@ WebHook升级版，增加了各种功能
    Package that will Exec after finished commandPackage
    
 ## Command Package
-  - Variable $command
+  - Variable `$command`
   你想要执行的命令  
   **注意** 如果你希望command被你指定的Variable渲染，请使用双引号
 ### 编写Pack
