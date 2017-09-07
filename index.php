@@ -58,8 +58,8 @@ if (!empty($projectName = $result->slash['project'])) {
 				$postCommand = new command(
 					$config->config['postCommandPackage'],
 					$config->config['postCommandVariable'],
+					$config->getBasicVariable(),
 					['logFilePath' => $logFilePath],
-					$config->getBasicVariable()
 				);
 				foreach ($command->commands as $command) {
 					$postLog[$command] = shell_exec($command);  // Exec
