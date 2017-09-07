@@ -25,15 +25,15 @@ WebHook升级版，增加了各种功能
  - secret    
   Webhook Secret  
  - path    
- Project Path
- - logPath    
- Log Path, Empty means log will not be saved  
- - templateVariable  
- Variable You want to define in the command
- - commandPackage  
- Command package you want to run
- - postCommandVariable 
-   Post Command Variable
+ Project Path 项目地址
+ - logPath    
+ Log Path, Empty means log will not be saved  日志地址，留空将不会保存  
+ - templateVariable  
+ Variable You want to define in the command  命令变量
+ - commandPackage  
+ Command package you want to run   
+ - postCommandVariable   
+   Post Command Variable  
  - postCommandPackage   
    Package that will Exec after finished commandPackage
    
@@ -42,9 +42,9 @@ WebHook升级版，增加了各种功能
   你想要执行的命令  
   **注意** 如果你希望command被你指定的Variable渲染，请使用双引号
 ### 编写Pack
-  - 你的配置文件中的注册的变量`*Variable`都会被推广，所以你可以用{$key}获取到值
+  - 你的配置文件中的注册的变量`*Variable`都会被推广，所以你可以用`{$key}`获取到值
   - 其中，一部分基本变量`path`,`secret`会被默认推广，你可以直接调用，注册可以覆盖掉默认值
-  - `$LogFilePath` 只能在`PostCommand`内调用，这是注册在`runtimeVariable`中的
+  - `$LogFilePath` 只能在`PostCommand`内调用，这是注册在`runtimeVariable`中的，如果你没有填写路径，这个变量将会返回`NULL`
 
 ## Log
  - `index.php` 内定义了Log的储存方式（默认JSON）
