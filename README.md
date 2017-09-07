@@ -20,20 +20,21 @@ WebHook升级版，增加了各种功能
 - 调用地址： `/project/{Your Project Name}` 
 我们在仓库内提供一些例子供你参考
 ## Config  
-@TODO Be specific
-包含：
- - secret    
-  Webhook Secret  
- - path    
- Project Path 项目地址
- - logPath    
- Log Path, Empty means log will not be saved  日志地址，留空将不会保存  
- - templateVariable  
- Variable You want to define in the command  命令变量
- - commandPackage  
- Command package you want to run   
- - postCommandVariable   
-   Post Command Variable  
+@TODO Be specific  
+通常，配置的名字都是{{Project Name}}.config.php。当你在调用的时候将会自动加载
+组成成分包含：
+ - secret      
+  Webhook Secret    
+ - path      
+ Project Path 项目地址  
+ - logPath      
+ Log Path, Empty means log will not be saved  日志地址，留空将不会保存    
+ - templateVariable    
+ Variable You want to define in the command  命令变量  
+ - commandPackage    
+ Command package you want to run  指令包名称，`name`.pack.php
+ - postCommandVariable   
+   Post Command Variable  
  - postCommandPackage   
    Package that will Exec after finished commandPackage
    
