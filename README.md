@@ -4,10 +4,10 @@ ProjectHooker
 WebHook升级版，增加了各种功能
 
 # 目的
-在服务器上面同时部署多个项目的时候希望只用部署一次Webhook就可以全部挂钩？
-指令删改太麻烦？单文件耦合度太高？每次都要重新写一次脚本？
-想要发送指令Log到其他地方？（Telegram）？  
-这里应该有你想要的
+在服务器上面同时部署多个项目的时候希望只用部署一次Webhook就可以全部挂钩？   
+指令删改太麻烦？单文件耦合度太高？每次都要重新写一次脚本？    
+想要发送指令Log到其他地方？（Telegram）？      
+这里应该有你想要的    
 
 # 特性
 - 一次部署，后续只需要添加对应的配置文件和指令集即可
@@ -17,12 +17,12 @@ WebHook升级版，增加了各种功能
 - 觉得不够的话你可PR或者提issue看看能不能加咯
 
 # 说明
-- 调用地址： `/project/{Your Project Name}` 
-我们在仓库内提供一些例子供你参考
+- 调用地址： `/project/{Your Project Name}`     
+我们在仓库内提供一些例子供你参考    
 ## Config  
-@TODO Be specific  
-通常，配置的名字都是{{Project Name}}.config.php。当你在调用的时候将会自动加载
-组成成分包含：
+@TODO Be specific      
+通常，配置的名字都是{{Project Name}}.config.php。当你在调用的时候将会自动加载     
+组成成分包含：    
  - secret      
   Webhook Secret    
  - path      
